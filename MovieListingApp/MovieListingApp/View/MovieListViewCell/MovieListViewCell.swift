@@ -9,6 +9,10 @@ import UIKit
 
 class MovieListViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgMovie: UIImageView!
+    @IBOutlet weak var lblMovieTitle: UILabel!
+    @IBOutlet weak var lblMovieDate: UILabel!
+    @IBOutlet weak var lblMovieDesc: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,21 +9,24 @@ import UIKit
 
 class MovieDetailVC: UIViewController {
 
+    //MARK:Outlet
+    @IBOutlet weak var scrView: UIScrollView!
+    @IBOutlet weak var imgMovie: UIImageView!
+    @IBOutlet weak var vwDetails: UIView!
+    
+    var navigationTitle : String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initalSetup()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func initalSetup(){
+        self.title = navigationTitle
+        self.navigationController?.navigationBar.backItem?.backButtonTitle = " "
+        self.view.backgroundColor = UIColor.ThemeColor.backgroundColor
+        self.vwDetails.backgroundColor = UIColor.ThemeColor.backgroundColor
     }
-    */
+    
 
 }

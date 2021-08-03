@@ -13,6 +13,6 @@ struct APIKey {
 
 struct APIURL {
     static let BaseUrl = "https://developers.themoviedb.org/"
-    static let getMovieDiscoverUrl = "3/discover"
+    static let getMovieDiscoverUrl = "3/discover/movie?"//api_key="
     static let getMovieDetailUrl = "3/movies/get-movie-details"
 }
